@@ -1,0 +1,183 @@
+// ...existing code...
+# Common .gitignore for Python + FastAPI projects
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+downloads/
+.eggs/
+*.egg-info/
+.installed.cfg
+pip-wheel-metadata/
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+.venv/*
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Test, temporary and IDE files
+*.log
+*.tmp
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Environment and secrets
+.env
+.env.*
+.env.local
+.envrc
+*.pem
+*.key
+*.crt
+secrets.yml
+
+# Database files
+*.sqlite3
+*.db
+
+# FastAPI / ASGI runtime files
+gunicorn.sock
+uvicorn.log
+
+# Migrations (keep source migrations, ignore compiled files)
+alembic/versions/*.pyc
+
+# Jupyter
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage / reports
+coverage.xml
+nosetests.xml
+
+# Misc
+*.egg
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+dist/
+build/
+```// filepath: /home/ogola/personal/piw/.gitignore
+// ...existing code...
+# Common .gitignore for Python + FastAPI projects
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+build/
+dist/
+downloads/
+.eggs/
+*.egg-info/
+.installed.cfg
+pip-wheel-metadata/
+
+# Virtual environments
+portflow/
+env/
+.venv/
+ENV/
+.venv/*
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Test, temporary and IDE files
+*.log
+*.tmp
+*.swp
+*.swo
+*.sublime-workspace
+*.sublime-project
+
+# Environment and secrets
+.env
+.env.*
+.env.local
+.envrc
+*.pem
+*.key
+*.crt
+secrets.yml
+
+# Database files
+*.sqlite3
+*.db
+
+# FastAPI / ASGI runtime files
+gunicorn.sock
+uvicorn.log
+
+# Migrations (keep source migrations, ignore compiled files)
+alembic/versions/*.pyc
+
+# Jupyter
+.ipynb_checkpoints
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage / reports
+coverage.xml
+nosetests.xml
+
+# Misc
+*.egg
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+dist/
+build/
