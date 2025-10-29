@@ -1,13 +1,10 @@
-# app/models/kpa.py
-from pydantic import BaseModel, Field
+from pydantic import BaseModel
 from datetime import datetime
 from typing import Optional
-from app.models.shared_schema import SharedBase
+from app.models.shared_schema import SharedIdentifiers
 
-class KPAData(SharedBase):
-    vessel_name: str
-    container_id: str
-    operation_status: str
-    berth_number: Optional[str]
-    arrival_time: datetime
-    departure_time: Optional[datetime]
+class KPARecord(SharedIdentifiers):
+    terminal_of_discharge: Optional[str]
+    gross_weight: Optional[float]
+    cfs_nomination: Optional[str]
+    free_days_expiry: Optional[datetime]
