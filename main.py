@@ -11,7 +11,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",                # local dev
-        "https://your-frontend-prod.com",       
+        "https://portflow-6m7v.onrender.com",       
     ],
     allow_credentials=True,
     allow_methods=["*"],
