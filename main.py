@@ -11,7 +11,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:3000",                # local dev
-        "https://your-frontend-prod.com",       # deployed frontend
+        "https://your-frontend-prod.com",       
     ],
     allow_credentials=True,
     allow_methods=["*"],
