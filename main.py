@@ -9,10 +9,13 @@ app = FastAPI(title="PortFlow Maintenance API")
 # --- CORS: allow any URL ---
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # <-- allows all origins
+    allow_origins=[
+        "http://localhost:3000",                # local dev
+        "https://your-frontend-prod.com",       # deployed frontend
+    ],
     allow_credentials=True,
-    allow_methods=["*"],   # allow all HTTP methods
-    allow_headers=["*"],   # allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
 # --- Startup tasks ---
@@ -26,4 +29,5 @@ app.include_router(api_router, prefix="/api/v1")
 # --- Root endpoint ---
 @app.get("/")
 async def root():
+    
     return {"message": "PortFlow backend is running successfully!"}
