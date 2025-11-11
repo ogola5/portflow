@@ -51,16 +51,16 @@ async def maintenance_reminder_loop():
                 component = await db["components"].find_one({"component_id": item["component_id"]})
                 if component:
                     try:
-                        await send_email(
-                            to="maintenance_team@portflow.ai",
-                            subject=f"Maintenance Due Soon: {component['name']}",
-                            body=(
-                                f"Component {component['name']} (ID: {component['component_id']}) "
-                                f"is due for maintenance on {item['next_due_date']}.\n\n"
-                                "Please confirm spare part availability and schedule work."
-                            ),
-                        )
-                        logger.info(f"Reminder sent for component {component['component_id']}")
+                        # await send_email(
+                        #     to="maintenance_team@portflow.ai",
+                        #     subject=f"Maintenance Due Soon: {component['name']}",
+                        #     body=(
+                        #         f"Component {component['name']} (ID: {component['component_id']}) "
+                        #         f"is due for maintenance on {item['next_due_date']}.\n\n"
+                        #         "Please confirm spare part availability and schedule work."
+                        #     ),
+                        # )
+                        logger.info(f"EMAIL SENDING DISABLED: Reminder for component {component['component_id']} was not sent.")
                     except Exception as e:
                         logger.warning(f"Failed to send email for {component['component_id']}: {e}")
 
