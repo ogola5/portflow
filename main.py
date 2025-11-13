@@ -73,7 +73,7 @@ async def global_exception_handler(request: Request, exc: Exception):
 @app.on_event("startup")
 async def startup_event():
     try:
-        asyncio.create_task(maintenance_reminder_loop())
+        # asyncio.create_task(maintenance_reminder_loop())
         logger.info("Maintenance reminder loop started successfully.")
     except Exception as e:
         logger.error(f"Failed to start maintenance loop: {e}", exc_info=True)
